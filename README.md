@@ -12,18 +12,32 @@
 <ul>
   <li>
     js-cookie<br>
-    <a herf="https://github.com/js-cookie/js-cookie"></a>
+    <a herf="https://github.com/js-cookie/js-cookie">js-cookie</a>
    </li>
   <li>
     gsap
-    <a herf="https://greensock.com/gsap/"></a>
+    <a herf="https://greensock.com/gsap/">gsap</a>
    </li>
   <li>
     react-router
-    <a herf="https://reactrouter.com/"></a>
+    <a herf="https://reactrouter.com/">react-router</a>
    </li>
   <li>
     react-icons
-    <a herf="https://react-icons.github.io/react-icons"></a>
+    <a herf="https://react-icons.github.io/react-icons">react-icons</a>
    </li>
 </ul>
+
+<ul>
+  <li>
+    HTML
+   </li>
+  <li>
+    SCSS
+   </li>
+  <li>
+    React
+   </li>
+</ul>
+
+
