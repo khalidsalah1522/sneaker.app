@@ -1,0 +1,21 @@
+.favorite-wrapper {
+  min-height: calc(100vh - 7rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .favorite-container {
+    min-height: calc(100vh - 7rem);
+    width: 80%;
+
+    h1 {
+      padding: 2rem 3rem;
+    }
+
+    .your-favorites {
+      width: 100%;
+      height: 80%;
+      background: black;
+    }
+  }
+}

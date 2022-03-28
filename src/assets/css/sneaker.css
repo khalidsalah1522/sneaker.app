@@ -1,0 +1,351 @@
+@media screen and (min-width: 360px) {
+  .sneaker-wrapper {
+    height: calc(100vh - 8rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sneaker-wrapper .sneaker-container {
+    width: 95%;
+    height: 95%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker {
+    height: 50%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info {
+    height: 50%;
+    padding: 0.5rem 0.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .sneaker-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .sneaker-name .add-favor {
+    width: 30%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .sneaker-name .add-favor button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #9d9b9b;
+    font-size: 1.5rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info p {
+    line-height: 20px;
+    width: 90%;
+    font-size: 0.95rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info span {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control {
+    padding: 0rem 0.8rem;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 0.2rem 0.2rem #f1eeee;
+            box-shadow: 0 3px 0.2rem 0.2rem #f1eeee;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy {
+    position: relative;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .add button {
+    cursor: pointer;
+    padding: 0.3rem 0.4rem;
+    padding-right: 1.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 400;
+    border: 2px solid black;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 75%;
+    height: 3px;
+    background: black;
+    border-radius: 25px;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::after, .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::before {
+    content: "";
+    position: absolute;
+    left: -1.5%;
+    width: 0.8rem;
+    height: 2px;
+    background: black;
+    border-radius: 50px;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::after {
+    top: 110%;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::before {
+    top: -150%;
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .sneaker-wrapper .sneaker-container {
+    width: 90%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info {
+    padding: 1.5rem 0.4rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .sneaker-name {
+    font-size: 1.5rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info p {
+    line-height: 18px;
+    width: 85%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info {
+    width: 70%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info span {
+    font-size: 1.1rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control {
+    padding: 0rem 1rem;
+    width: 50%;
+    border-radius: 4px;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control button {
+    cursor: pointer;
+    font-size: 2.1rem;
+    font-weight: 700;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .add button {
+    padding: 0.3rem 0.4rem;
+    padding-right: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 75%;
+    height: 3px;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::after {
+    top: 100%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::before {
+    top: -100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sneaker-wrapper .sneaker-container {
+    width: 70%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info {
+    padding: 0.5rem 0.4rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .sneaker-name {
+    font-size: 1.5rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info p {
+    line-height: 18px;
+    width: 68%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info {
+    width: 60%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info span {
+    font-size: 1.4rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control {
+    width: 60%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control button {
+    font-size: 2.2rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .add button {
+    padding: 0.4rem 0.5rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::after {
+    left: -1%;
+    top: 150%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::before {
+    left: -1%;
+    top: -100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sneaker-wrapper .sneaker-container {
+    height: 70%;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker {
+    height: 100%;
+    width: 45%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info {
+    height: 95%;
+    width: 45%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .sneaker-name {
+    font-size: 1.6rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info p {
+    line-height: 26px;
+    width: 95%;
+    font-size: 1.1rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info {
+    width: 100%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info span {
+    font-size: 1.4rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control {
+    width: 60%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control button {
+    font-size: 2.2rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .add button {
+    padding: 0.4rem 0.5rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow {
+    left: 70%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::after {
+    left: -1%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow::before {
+    left: -1%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sneaker-wrapper .sneaker-container {
+    width: 75%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info {
+    height: 85%;
+    width: 45%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .sneaker-name {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info p {
+    line-height: 26px;
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info {
+    width: 80%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info span {
+    font-size: 1.5rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control {
+    width: 60%;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .price-info .control button {
+    font-size: 2.4rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .add button {
+    padding: 0.6rem 0.7rem;
+    padding-right: 3rem;
+    font-size: 1.2rem;
+  }
+  .sneaker-wrapper .sneaker-container .sneaker-info .buy .arrow {
+    left: 60%;
+  }
+}
+/*# sourceMappingURL=sneaker.css.map */

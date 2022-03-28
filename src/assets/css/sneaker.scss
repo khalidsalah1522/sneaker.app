@@ -1,0 +1,387 @@
+@media screen and (min-width: 360px) {
+  .sneaker-wrapper {
+    height: calc(100vh - 8rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .sneaker-container {
+      width: 95%;
+      height: 95%;
+
+      .sneaker {
+        height: 50%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+
+      .sneaker-info {
+        height: 50%;
+        padding: 0.5rem 0.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .sneaker-name {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .add-favor {
+            width: 30%;
+
+            button {
+              cursor: pointer;
+              background: transparent;
+              border: none;
+              color: hsl(0, 1%, 61%);
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        p {
+          line-height: 20px;
+          width: 90%;
+          font-size: 0.95rem;
+        }
+
+        .price-info {
+          width: 95%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          span {
+            font-size: 1.1rem;
+            font-weight: 500;
+          }
+
+          .control {
+            padding: 0rem 0.8rem;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.1rem;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-shadow: 0 3px 0.2rem 0.2rem rgb(241, 238, 238);
+
+            button {
+              background: transparent;
+              border: none;
+              font-size: 2rem;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .buy {
+          position: relative;
+          width: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .add {
+            button {
+              cursor: pointer;
+              padding: 0.3rem 0.4rem;
+              padding-right: 1.5rem;
+              background: transparent;
+              border: none;
+              font-size: 1.05rem;
+              font-weight: 400;
+              border: 2px solid rgb(0, 0, 0);
+            }
+          }
+
+          .arrow {
+            position: absolute;
+            top: 50%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            height: 3px;
+            background: black;
+            border-radius: 25px;
+          }
+
+          %after {
+            content: "";
+            position: absolute;
+            left: -1.5%;
+            width: 0.8rem;
+            height: 2px;
+            background: black;
+            border-radius: 50px;
+          }
+
+          .arrow::after {
+            @extend %after;
+            top: 110%;
+            transform: rotateZ(45deg);
+          }
+
+          .arrow::before {
+            @extend %after;
+            top: -150%;
+            transform: rotateZ(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .sneaker-wrapper {
+    .sneaker-container {
+      width: 90%;
+      .sneaker-info {
+        padding: 1.5rem 0.4rem;
+
+        .sneaker-name {
+          font-size: 1.5rem;
+        }
+
+        p {
+          line-height: 18px;
+          width: 85%;
+        }
+
+        .price-info {
+          width: 70%;
+
+          span {
+            font-size: 1.1rem;
+          }
+
+          .control {
+            padding: 0rem 1rem;
+            width: 50%;
+            border-radius: 4px;
+
+            button {
+              cursor: pointer;
+              font-size: 2.1rem;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .buy {
+          .add {
+            button {
+              padding: 0.3rem 0.4rem;
+              padding-right: 1.5rem;
+              font-size: 1rem;
+              font-weight: 400;
+            }
+          }
+
+          .arrow {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            width: 75%;
+            height: 3px;
+          }
+          .arrow::after {
+            top: 100%;
+          }
+
+          .arrow::before {
+            top: -100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sneaker-wrapper {
+    .sneaker-container {
+      width: 70%;
+      .sneaker-info {
+        padding: 0.5rem 0.4rem;
+
+        .sneaker-name {
+          font-size: 1.5rem;
+        }
+
+        p {
+          line-height: 18px;
+          width: 68%;
+        }
+
+        .price-info {
+          width: 60%;
+
+          span {
+            font-size: 1.4rem;
+          }
+
+          .control {
+            width: 60%;
+
+            button {
+              font-size: 2.2rem;
+            }
+          }
+        }
+
+        .buy {
+          .add {
+            button {
+              padding: 0.4rem 0.5rem;
+              padding-right: 2rem;
+              font-size: 1.1rem;
+            }
+          }
+
+          .arrow::after {
+            left: -1%;
+            top: 150%;
+          }
+
+          .arrow::before {
+            left: -1%;
+            top: -100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sneaker-wrapper {
+    .sneaker-container {
+      height: 70%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .sneaker {
+        height: 100%;
+        width: 45%;
+      }
+
+      .sneaker-info {
+        height: 95%;
+        width: 45%;
+
+        .sneaker-name {
+          font-size: 1.6rem;
+        }
+
+        p {
+          line-height: 26px;
+          width: 95%;
+          font-size: 1.1rem;
+        }
+
+        .price-info {
+          width: 100%;
+
+          span {
+            font-size: 1.4rem;
+          }
+
+          .control {
+            width: 60%;
+
+            button {
+              font-size: 2.2rem;
+            }
+          }
+        }
+
+        .buy {
+          .add {
+            button {
+              padding: 0.4rem 0.5rem;
+              padding-right: 2rem;
+              font-size: 1.1rem;
+            }
+          }
+
+          .arrow {
+            left: 70%;
+          }
+
+          .arrow::after {
+            left: -1%;
+          }
+
+          .arrow::before {
+            left: -1%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sneaker-wrapper {
+    .sneaker-container {
+      width: 75%;
+
+      .sneaker-info {
+        height: 85%;
+        width: 45%;
+
+        .sneaker-name {
+          font-size: 2rem;
+          letter-spacing: 3px;
+        }
+
+        p {
+          line-height: 26px;
+          width: 80%;
+          font-size: 1.2rem;
+        }
+
+        .price-info {
+          width: 80%;
+
+          span {
+            font-size: 1.5rem;
+          }
+
+          .control {
+            width: 60%;
+
+            button {
+              font-size: 2.4rem;
+            }
+          }
+        }
+
+        .buy {
+          .add {
+            button {
+              padding: 0.6rem 0.7rem;
+              padding-right: 3rem;
+              font-size: 1.2rem;
+            }
+          }
+
+          .arrow {
+            left: 60%;
+          }
+        }
+      }
+    }
+  }
+}

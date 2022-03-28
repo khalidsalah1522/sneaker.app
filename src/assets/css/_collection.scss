@@ -1,0 +1,181 @@
+@media screen and (min-width: 360px) {
+  .collections-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .collections {
+      font-size: 2.6rem;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .men-collection,
+    .women-collection {
+      position: relative;
+      display: flex;
+      min-height: 300px;
+      width: 90%;
+
+      .collection-type {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: linear-gradient(
+          180deg,
+          rgba(211, 208, 208, 0.132) 0%,
+          rgba(0, 0, 0, 0.9023984593837535) 83%
+        );
+        color: white;
+        font-weight: 400;
+
+        h1 {
+          padding: 1rem;
+          font-size: 2.4rem;
+          font-weight: 400;
+          margin-bottom: -1rem;
+        }
+
+        h2 {
+          padding: 0 1rem;
+          font-size: 2.2rem;
+          font-weight: 400;
+        }
+
+        .explore {
+          width: 97%;
+          text-align: right;
+          margin-bottom: 0.8rem;
+
+          button {
+            border: 2px solid rgb(255, 255, 255);
+            background: transparent;
+            padding: 0.4rem 1.2rem;
+            font-size: 1.1rem;
+            letter-spacing: 1.5px;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .collection-poster {
+        width: 100%;
+
+        img {
+          object-fit: cover;
+          background-position: center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .women-collection {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .collections-container {
+    .collections {
+      font-size: 3.2rem;
+    }
+
+    .men-collection,
+    .women-collection {
+      min-height: 350px;
+      width: 40%;
+
+      .collection-type {
+        h1 {
+          padding: 2rem 1rem;
+          font-size: 3rem;
+          letter-spacing: 8px;
+          font-weight: 400;
+          margin-bottom: -0.5rem;
+        }
+
+        h2 {
+          padding: 0 1rem;
+          font-size: 2.6rem;
+          font-weight: 400;
+          letter-spacing: 8px;
+        }
+
+        .explore {
+          width: 95%;
+          margin-bottom: 1.5rem;
+
+          button {
+            padding: 0.6rem 1.6rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .collections-container {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .collections {
+      position: absolute;
+      top: 5%;
+      font-size: 4rem;
+    }
+
+    .men-collection,
+    .women-collection {
+      min-height: 350px;
+      width: 40%;
+
+      .collection-type {
+        h1 {
+          padding: 2rem 1rem;
+          font-size: 3rem;
+          letter-spacing: 8px;
+          font-weight: 400;
+          margin-bottom: -0.5rem;
+        }
+
+        h2 {
+          padding: 0 1rem;
+          font-size: 2.6rem;
+          font-weight: 400;
+          letter-spacing: 8px;
+        }
+
+        .explore {
+          width: 95%;
+          margin-bottom: 1.5rem;
+
+          button {
+            padding: 0.6rem 1.6rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+          }
+        }
+      }
+    }
+
+    .women-collection {
+      margin-top: 0;
+    }
+  }
+}

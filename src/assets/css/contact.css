@@ -1,0 +1,324 @@
+.contact {
+  height: calc(100vh - 7rem);
+}
+
+.contact .contact-container {
+  height: 100%;
+  width: 100%;
+}
+
+.contact .contact-container .col1 {
+  position: relative;
+  padding: 1rem 0.5rem;
+  height: 45%;
+  width: 100%;
+  color: #222;
+  text-align: center;
+}
+
+.contact .contact-container .col1 h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.contact .contact-container .col1 p {
+  padding: 0.2rem 0.5rem;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  color: #797979;
+}
+
+.contact .contact-container .col1 .arrow {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scaleY(1.3);
+          transform: translateX(-50%) scaleY(1.3);
+  font-size: 1.8rem;
+}
+
+.contact .contact-container .col2 {
+  width: 100%;
+  height: 55%;
+}
+
+.contact .contact-container .col2 form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.contact .contact-container .col2 form label {
+  width: 80%;
+  height: 13%;
+}
+
+.contact .contact-container .col2 form label p {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.contact .contact-container .col2 form label input,
+.contact .contact-container .col2 form label textarea {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #6d6d6d;
+  padding: 0.2rem;
+}
+
+.contact .contact-container .col2 form label textarea {
+  padding: 0.3rem 0.2rem;
+}
+
+.contact .contact-container .col2 form label input::-webkit-input-placeholder,
+.contact .contact-container .col2 form label textarea::-webkit-input-placeholder {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.contact .contact-container .col2 form label input:-ms-input-placeholder,
+.contact .contact-container .col2 form label textarea:-ms-input-placeholder {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.contact .contact-container .col2 form label input::-ms-input-placeholder,
+.contact .contact-container .col2 form label textarea::-ms-input-placeholder {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.contact .contact-container .col2 form label input::placeholder,
+.contact .contact-container .col2 form label textarea::placeholder {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+.contact .contact-container .col2 form .submit {
+  position: relative;
+  width: 80%;
+  height: 20%;
+}
+
+.contact .contact-container .col2 form .submit button {
+  margin-top: 1.5rem;
+  width: 30%;
+  height: 50%;
+  border: 1px solid #222;
+  background: transparent;
+  font-weight: 500;
+  font-size: 1.03rem;
+}
+
+.contact .contact-container .col2 form .submit .arrow {
+  cursor: pointer;
+  position: absolute;
+  -webkit-transform: rotateZ(-90deg) scaleY(1.2);
+          transform: rotateZ(-90deg) scaleY(1.2);
+  top: 35%;
+  left: 30%;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+@media screen and (min-width: 768px) {
+  .contact .contact-container .col1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .contact-container .col1 h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  .contact .contact-container .col1 p {
+    width: 60%;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    color: #797979;
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+  .contact .contact-container .col1 .arrow {
+    -webkit-transform: translateX(-50%) scaleY(1.5);
+            transform: translateX(-50%) scaleY(1.5);
+    font-size: 2rem;
+  }
+  .contact .contact-container .col2 form {
+    padding: 1.5rem 0;
+  }
+  .contact .contact-container .col2 form label {
+    width: 60%;
+    height: 12%;
+  }
+  .contact .contact-container .col2 form label p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+  }
+  .contact .contact-container .col2 form label textarea {
+    padding: 0.4rem 0.2rem;
+  }
+  .contact .contact-container .col2 form .submit {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contact-container .col2 form .submit button {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .contact .contact-container .col2 form .submit .arrow {
+    left: 65%;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    height: calc(100vh - 5rem);
+  }
+  .contact .contact-container .col1 {
+    margin-top: -1rem;
+    height: 40%;
+  }
+  .contact .contact-container .col1 h2 {
+    font-size: 2.2rem;
+  }
+  .contact .contact-container .col1 p {
+    width: 50%;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  .contact .contact-container .col1 .arrow {
+    -webkit-transform: translateX(-50%) scaleY(1.5);
+            transform: translateX(-50%) scaleY(1.5);
+    font-size: 2rem;
+    bottom: 5%;
+  }
+  .contact .contact-container .col2 {
+    height: 60%;
+  }
+  .contact .contact-container .col2 form {
+    padding: 1.5rem 0;
+  }
+  .contact .contact-container .col2 form label {
+    width: 40%;
+  }
+  .contact .contact-container .col2 form label p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+  }
+  .contact .contact-container .col2 form label textarea {
+    padding: 0.4rem 0.2rem;
+  }
+  .contact .contact-container .col2 form .submit {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contact-container .col2 form .submit button {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .contact .contact-container .col2 form .submit .arrow {
+    top: 38%;
+    left: 65%;
+    font-size: 2.1rem;
+    -webkit-transform: rotateZ(-90deg) scaleY(1.6);
+            transform: rotateZ(-90deg) scaleY(1.6);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact .contact-container .col1 {
+    margin-top: -1rem;
+    height: 40%;
+  }
+  .contact .contact-container .col1 h2 {
+    font-size: 2.4rem;
+  }
+  .contact .contact-container .col1 p {
+    width: 40%;
+    line-height: 1.6;
+  }
+  .contact .contact-container .col1 .arrow {
+    -webkit-transform: translateX(-50%) scaleY(1.8);
+            transform: translateX(-50%) scaleY(1.8);
+    font-size: 2.1rem;
+    bottom: 10%;
+  }
+  .contact .contact-container .col2 {
+    height: 60%;
+  }
+  .contact .contact-container .col2 form {
+    padding: 1.5rem 0;
+  }
+  .contact .contact-container .col2 form label {
+    width: 28%;
+  }
+  .contact .contact-container .col2 form .submit {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contact-container .col2 form .submit button {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .contact .contact-container .col2 form .submit .arrow {
+    left: 65%;
+    font-size: 2.2rem;
+    -webkit-transform: rotateZ(-90deg) scaleY(1.8);
+            transform: rotateZ(-90deg) scaleY(1.8);
+  }
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,154 @@
+.about {
+  height: calc(100vh - 7rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about-container {
+  height: 98%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-container .col1 {
+  height: 50%;
+  width: 100%;
+}
+
+.about .about-container .col1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.about .about-container .col2 {
+  height: 50%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .about-container .col2 h1 {
+  font-size: 1.6rem;
+  width: 80%;
+}
+
+.about .about-container .col2 p {
+  padding: 0 0.5rem;
+  font-size: 0.95rem;
+  line-height: 18px;
+}
+
+.about .about-container .col2 .readmore {
+  padding: 0 0.5rem;
+}
+
+.about .about-container .col2 .readmore button {
+  background: transparent;
+  border: 1px solid black;
+  padding: 0.3rem 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .about .about-container .col2 h1 {
+    font-size: 2rem;
+  }
+  .about .about-container .col2 p {
+    line-height: 22px;
+    width: 60%;
+  }
+  .about .about-container .col2 .readmore button {
+    padding: 0.4rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about .about-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 60%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about .about-container .col1 {
+    height: 100%;
+    width: 40%;
+  }
+  .about .about-container .col2 {
+    height: 100%;
+    width: 40%;
+  }
+  .about .about-container .col2 h1 {
+    font-size: 2.4rem;
+  }
+  .about .about-container .col2 p {
+    line-height: 22px;
+    width: 100%;
+  }
+  .about .about-container .col2 .readmore button {
+    padding: 0.4rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about .about-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 60%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about .about-container .col1 {
+    height: 100%;
+    width: 40%;
+  }
+  .about .about-container .col2 {
+    height: 100%;
+    width: 40%;
+  }
+  .about .about-container .col2 h1 {
+    font-size: 3rem;
+  }
+  .about .about-container .col2 p {
+    line-height: 26px;
+    width: 80%;
+    font-size: 1.05rem;
+  }
+  .about .about-container .col2 .readmore button {
+    padding: 0.6rem 2.4rem;
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */

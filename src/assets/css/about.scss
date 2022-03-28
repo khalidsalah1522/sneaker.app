@@ -1,0 +1,149 @@
+.about {
+  height: calc(100vh - 7rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .about-container {
+    height: 98%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .col1 {
+      height: 50%;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .col2 {
+      height: 50%;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h1 {
+        font-size: 1.6rem;
+        width: 80%;
+      }
+
+      p {
+        padding: 0 0.5rem;
+        font-size: 0.95rem;
+        line-height: 18px;
+      }
+
+      .readmore {
+        padding: 0 0.5rem;
+        button {
+          background: transparent;
+          border: 1px solid black;
+          padding: 0.3rem 1.8rem;
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    .about-container {
+      .col2 {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          line-height: 22px;
+          width: 60%;
+        }
+
+        .readmore {
+          button {
+            padding: 0.4rem 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    .about-container {
+      flex-direction: row;
+      height: 60%;
+      justify-content: space-around;
+
+      .col1 {
+        height: 100%;
+        width: 40%;
+      }
+
+      .col2 {
+        height: 100%;
+        width: 40%;
+        h1 {
+          font-size: 2.4rem;
+        }
+
+        p {
+          line-height: 22px;
+          width: 100%;
+        }
+
+        .readmore {
+          button {
+            padding: 0.4rem 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    .about-container {
+      flex-direction: row;
+      height: 60%;
+      justify-content: space-around;
+
+      .col1 {
+        height: 100%;
+        width: 40%;
+      }
+
+      .col2 {
+        height: 100%;
+        width: 40%;
+        h1 {
+          font-size: 3rem;
+        }
+
+        p {
+          line-height: 26px;
+          width: 80%;
+          font-size: 1.05rem;
+        }
+
+        .readmore {
+          button {
+            padding: 0.6rem 2.4rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

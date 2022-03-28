@@ -1,0 +1,674 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html:-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.container {
+  height: 100vh;
+}
+
+@media screen and (min-width: 360px) {
+  .header .header-container .col2 .toggle-menu, .header .header-container .col2 .cart {
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .header {
+    height: 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .header-container {
+    width: 90%;
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header-container .logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .header .header-container .col2 {
+    position: relative;
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header-container .col2 .cart-wrapper {
+    position: relative;
+  }
+  .header .header-container .col2 .cart-wrapper span {
+    position: absolute;
+    left: 110%;
+    top: -30%;
+    font-size: 1.1rem;
+  }
+  .header .header-container .cart-container {
+    position: absolute;
+    top: 85%;
+    right: 40%;
+    height: 12rem;
+    width: 18rem;
+    border: 1px solid black;
+    background: white;
+    z-index: 30;
+    overflow: hidden;
+  }
+  .header .header-container .cart-container .empty {
+    height: 12rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 500;
+  }
+  .header .header-container .cart-container .not-empty {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 12rem;
+    width: 18rem;
+  }
+  .header .header-container .cart-container .not-empty .cart-info {
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    padding: 0rem 0.5rem;
+    width: 98%;
+    height: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header-container .cart-container .not-empty .cart-info .total {
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+  }
+  .header .header-container .cart-container .not-empty .cart-info .total span {
+    margin-left: 0.3rem;
+    font-weight: 500;
+    color: black;
+  }
+  .header .header-container .cart-container .not-empty .cart-info .delete {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store {
+    margin-top: 3rem;
+    width: 100%;
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: auto;
+    padding: 0.4rem 0;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store .sneaker-cart {
+    height: 4rem;
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store .sneaker-cart .sneaker-img {
+    height: 80%;
+    width: 25%;
+    border-radius: 4px;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store .sneaker-cart .sneaker-img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store .sneaker-cart .info {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store .sneaker-cart .info .sneaker-name {
+    width: 60%;
+    font-size: 0.9rem;
+    color: gray;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store .sneaker-cart .info .sneaker-price {
+    font-size: 0.9rem;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store:-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+  }
+  .header .header-container .cart-container .not-empty .sneaker-store::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header .header-container {
+    padding: 0.5rem;
+  }
+  .header .header-container .logo {
+    font-size: 1.8rem;
+  }
+  .header .header-container .col2 {
+    width: 25%;
+  }
+  .header .header-container .col2 .toggle-menu,
+  .header .header-container .col2 .cart {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .header-container {
+    padding: 0.5rem;
+  }
+  .header .header-container .logo {
+    font-size: 2rem;
+  }
+  .header .header-container .col2 {
+    width: 15%;
+  }
+  .header .header-container .col2 .toggle-menu,
+  .header .header-container .col2 .cart {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header .header-container {
+    padding: 0.5rem;
+  }
+  .header .header-container .logo {
+    font-size: 2.1rem;
+  }
+  .header .header-container .col2 {
+    width: 10%;
+  }
+  .header .header-container .col2 .toggle-menu,
+  .header .header-container .col2 .cart {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .menu {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    right: 0%;
+    top: 0%;
+    background: #222;
+    z-index: 100;
+  }
+  .menu .menu-container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .menu-container .col1 {
+    height: 5rem;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: white;
+    margin-top: -5rem;
+  }
+  .menu .menu-container .col1 .logo {
+    font-size: 1.4rem;
+  }
+  .menu .menu-container .col1 .close-menu {
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+  }
+  .menu .menu-container .col2 {
+    margin-top: -10rem;
+    height: 40%;
+  }
+  .menu .menu-container .col2 nav {
+    height: 100%;
+  }
+  .menu .menu-container .col2 nav ul {
+    height: 100%;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .menu-container .col2 nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  .menu .socail-meda {
+    width: 45%;
+  }
+  .menu .socail-meda a {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu .menu-container .col1 {
+    margin-top: -3rem;
+  }
+  .menu .menu-container .col1 .logo {
+    font-size: 1.6rem;
+  }
+  .menu .menu-container .col1 .close-menu {
+    font-size: 1.6rem;
+  }
+  .menu .menu-container .col2 {
+    margin-top: -8rem;
+  }
+  .menu .menu-container .col2 nav ul li a {
+    font-size: 1.2rem;
+  }
+  .menu .socail-meda {
+    width: 55%;
+  }
+  .menu .socail-meda a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .footer {
+    padding: 1rem;
+    height: 65vh;
+    background: #222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: white;
+  }
+  .footer .more-info {
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .more-info .info {
+    height: 40%;
+    width: 100%;
+  }
+  .footer .more-info .info h2 {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .footer .more-info .info p {
+    width: 90%;
+    margin-top: 0.5rem;
+    line-height: 18px;
+    font-size: 0.9rem;
+  }
+  .footer .more-info .links {
+    width: 20%;
+    height: 35%;
+  }
+  .footer .more-info .links h3 {
+    font-size: 1.2rem;
+  }
+  .footer .more-info .links ul {
+    width: 90%;
+    height: 80%;
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+  }
+  .footer .more-info .links ul a {
+    color: #9e9c9c;
+    text-decoration: underline;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .footer .more-info .links ul a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .footer .more-info .contact-us {
+    width: 70%;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .more-info .contact-us p {
+    font-size: 1rem;
+  }
+  .footer .more-info .contact-us a {
+    color: #9e9c9c;
+  }
+  .footer .more-info .contact-us a span {
+    margin-right: 0.5rem;
+    color: white;
+  }
+  .footer .copyright-socail {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .copyright-socail p {
+    font-size: 1rem;
+  }
+  .socail-meda {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .socail-meda a {
+    font-size: 1rem;
+    color: #9e9c9c;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .socail-meda a:hover {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    padding: 1rem;
+  }
+  .footer .more-info .info h2 {
+    font-size: 1.6rem;
+  }
+  .footer .more-info .info p {
+    width: 100%;
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
+  }
+  .footer .more-info .links h3 {
+    font-size: 1.4rem;
+  }
+  .footer .more-info .contact-us {
+    width: 60%;
+  }
+  .footer .more-info .contact-us p {
+    font-size: 1.1rem;
+  }
+  .footer .copyright-socail p {
+    font-size: 1.1rem;
+  }
+  .socail-meda a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 2rem 3rem;
+  }
+  .footer .more-info .info h2 {
+    font-size: 1.8rem;
+  }
+  .footer .more-info .info p {
+    width: 75%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .footer .more-info .contact-us {
+    width: 50%;
+  }
+  .footer .more-info .contact-us p {
+    font-size: 1.2rem;
+  }
+  .footer .copyright-socail p {
+    font-size: 1.2rem;
+  }
+  .socail-meda a {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 2rem 4rem;
+  }
+  .footer .more-info .info h2 {
+    font-size: 2.2rem;
+  }
+  .footer .more-info .info p {
+    width: 65%;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 20px;
+  }
+  .footer .more-info .links h3 {
+    font-size: 1.6rem;
+  }
+  .footer .more-info .contact-us {
+    width: 50%;
+  }
+  .footer .more-info .contact-us p {
+    font-size: 1.6rem;
+  }
+  .footer .more-info .contact-us a {
+    font-size: 1.2rem;
+  }
+  .footer .copyright-socail p {
+    font-size: 1.4rem;
+  }
+  .socail-meda a {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 4rem 6rem;
+  }
+  .footer .more-info {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .footer .more-info .info {
+    height: 80%;
+    width: 40%;
+  }
+  .footer .more-info .info h2 {
+    font-size: 2.2rem;
+  }
+  .footer .more-info .info p {
+    width: 80%;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 22px;
+  }
+  .footer .more-info .links {
+    height: 80%;
+  }
+  .footer .more-info .links h3 {
+    font-size: 1.8rem;
+  }
+  .footer .more-info .links ul {
+    height: 50%;
+  }
+  .footer .more-info .contact-us {
+    margin-top: -8rem;
+    height: 40%;
+    width: 30%;
+  }
+  .footer .more-info .contact-us p {
+    font-size: 1.4rem;
+  }
+  .footer .more-info .contact-us a {
+    font-size: 1.2rem;
+  }
+  .footer .copyright-socail p {
+    font-size: 1.4rem;
+  }
+  .socail-meda a {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=app.css.map */

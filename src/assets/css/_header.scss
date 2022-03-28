@@ -1,0 +1,243 @@
+@media screen and (min-width: 360px) {
+  %buttons {
+    font-size: 1.6rem;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .header {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .header-container {
+      width: 90%;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        font-size: 1.6rem;
+        font-weight: 600;
+        font-family: "Josefin Sans", sans-serif;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .col2 {
+        position: relative;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .cart-wrapper {
+          position: relative;
+
+          span {
+            position: absolute;
+            left: 110%;
+            top: -30%;
+            font-size: 1.1rem;
+          }
+        }
+
+        .toggle-menu {
+          @extend %buttons;
+        }
+
+        .cart {
+          @extend %buttons;
+        }
+      }
+
+      .cart-container {
+        position: absolute;
+        top: 85%;
+        right: 40%;
+        height: 12rem;
+        width: 18rem;
+        border: 1px solid black;
+        background: white;
+        z-index: 30;
+        overflow: hidden;
+
+        .empty {
+          height: 12rem;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 500;
+        }
+
+        .not-empty {
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          height: 12rem;
+          width: 18rem;
+
+          .cart-info {
+            position: absolute;
+            top: 2%;
+            left: 0%;
+            padding: 0rem 0.5rem;
+            width: 98%;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .total {
+              font-size: 1rem;
+              font-weight: 400;
+              color: gray;
+
+              span {
+                margin-left: 0.3rem;
+                font-weight: 500;
+                color: rgb(0, 0, 0);
+              }
+            }
+
+            .delete {
+              background: transparent;
+              border: none;
+              cursor: pointer;
+              font-size: 1.1rem;
+            }
+          }
+
+          .sneaker-store {
+            margin-top: 3rem;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: auto;
+            padding: 0.4rem 0;
+
+            .sneaker-cart {
+              height: 4rem;
+              width: 95%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .sneaker-img {
+                height: 80%;
+                width: 25%;
+                border-radius: 4px;
+
+                img {
+                  height: 100%;
+                  width: 100%;
+                  object-fit: contain;
+                  object-position: center;
+                }
+              }
+
+              .info {
+                width: 65%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .sneaker-name {
+                  width: 60%;
+                  font-size: 0.9rem;
+                  color: gray;
+                }
+
+                .sneaker-price {
+                  font-size: 0.9rem;
+                }
+              }
+            }
+          }
+
+          .sneaker-store:-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #f5f5f5;
+          }
+
+          .sneaker-store::-webkit-scrollbar {
+            width: 6px;
+            background-color: #f5f5f5;
+          }
+
+          .sneaker-store::-webkit-scrollbar-thumb {
+            background-color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    .header-container {
+      padding: 0.5rem;
+
+      .logo {
+        font-size: 1.8rem;
+      }
+
+      .col2 {
+        width: 25%;
+
+        .toggle-menu,
+        .cart {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    .header-container {
+      padding: 0.5rem;
+
+      .logo {
+        font-size: 2rem;
+      }
+
+      .col2 {
+        width: 15%;
+
+        .toggle-menu,
+        .cart {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    .header-container {
+      padding: 0.5rem;
+
+      .logo {
+        font-size: 2.1rem;
+      }
+
+      .col2 {
+        width: 10%;
+
+        .toggle-menu,
+        .cart {
+          font-size: 2.1rem;
+        }
+      }
+    }
+  }
+}

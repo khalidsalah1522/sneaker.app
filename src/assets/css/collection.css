@@ -1,0 +1,321 @@
+@media screen and (min-width: 360px) {
+  .collection {
+    min-height: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .collection .collection-container {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .collection .collection-container .col1 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 60vh;
+  }
+  .collection .collection-container .col1 .collection-images {
+    width: 90%;
+    height: 300px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    overflow: hidden;
+  }
+  .collection .collection-container .col1 .collection-images > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  .collection .collection-container .col1 .collection-images > div div {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 101%;
+    height: 100%;
+    background: white;
+    will-change: transform;
+  }
+  .collection .collection-container .col1 .collection-images > div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .collection .collection-container .col1 .collection-images .image1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 2 / 1 / 7 / 3;
+  }
+  .collection .collection-container .col1 .collection-images .image2 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: 1 / 3 / 6 / 5;
+  }
+  .collection .collection-container .col1 .collection-images .image3 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: 2 / 5 / 7 / 7;
+  }
+  .collection .collection-container .col1 p {
+    line-height: 18px;
+    color: #686767;
+    width: 85%;
+  }
+  .collection .collection-container .col2 {
+    margin-top: 4rem;
+    min-height: 110vh;
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+    background: #f7fafa;
+  }
+  .collection .collection-container .col2 > h1 {
+    padding-top: 2rem;
+    width: 80%;
+    color: #3b3b3b;
+    text-transform: capitalize;
+    text-align: left;
+    line-height: 40px;
+    margin-bottom: 2rem;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+  }
+  .collection .collection-container .col2 .sneaker-card-container {
+    cursor: pointer;
+    width: 40%;
+    height: 150px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  }
+  .collection .collection-container .col2 .sneaker-card-container .sneaker-card {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .collection .collection-container .col2 .sneaker-card-container .sneaker-card .sneaker-img {
+    height: 100%;
+    width: 100%;
+    background: rgba(181, 181, 181, 0.25);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .collection .collection-container .col2 .sneaker-card-container .sneaker-card .sneaker-img img {
+    width: 90%;
+    height: 90%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .collection .collection-container .col2 .sneaker-card-container:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 0.5rem 0.2rem #dddada;
+            box-shadow: 0 0 0.5rem 0.2rem #dddada;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .collection {
+    margin-top: 2rem;
+  }
+  .collection .collection-container .col1 {
+    height: 55vh;
+  }
+  .collection .collection-container .col1 .collection-images {
+    width: 60%;
+    height: 300px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+  }
+  .collection .collection-container .col1 p {
+    line-height: 18px;
+    color: #686767;
+    width: 60%;
+  }
+  .collection .collection-container .col2 {
+    width: 80%;
+    padding-bottom: 2rem;
+    gap: 20px;
+  }
+  .collection .collection-container .col2 > h1 {
+    letter-spacing: 1.8px;
+    font-size: 2.2rem;
+    line-height: 45px;
+  }
+  .collection .collection-container .col2 .sneaker-card-container {
+    width: 25%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .collection {
+    margin-top: 2rem;
+  }
+  .collection .collection-container .col1 {
+    height: 60vh;
+  }
+  .collection .collection-container .col1 .collection-images {
+    width: 50%;
+    height: 400px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+  }
+  .collection .collection-container .col1 p {
+    line-height: 18px;
+    color: #686767;
+    width: 60%;
+  }
+  .collection .collection-container .col2 {
+    margin-top: 2rem;
+    width: 90%;
+  }
+  .collection .collection-container .col2 > h1 {
+    padding: 2rem 4rem;
+    text-align: center;
+    letter-spacing: 1.8px;
+    font-size: 2.6rem;
+    line-height: 45px;
+  }
+  .collection .collection-container .col2 .sneaker-card-container {
+    width: 25%;
+    height: 170px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .collection {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+  }
+  .collection .collection-container .col1 {
+    height: 60vh;
+  }
+  .collection .collection-container .col1 .collection-images {
+    width: 45%;
+    height: 340px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+  }
+  .collection .collection-container .col1 p {
+    line-height: 18px;
+    color: #686767;
+    width: 60%;
+  }
+  .collection .collection-container .col2 {
+    margin-top: 2rem;
+    width: 70%;
+  }
+  .collection .collection-container .col2 > h1 {
+    padding: 3rem 9rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 2.2px;
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  .collection .collection-container .col2 .sneaker-card-container {
+    width: 25%;
+    height: 200px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=collection.css.map */
